@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b3b3c960ba987f746b055cb6029c8383
+guid: 6f4a0a3c1487a194ba4f349c9ffa5bc5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: exit ui_0
+      name: rgahn_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,8 +111,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59548408e8933b3419fceb42b7298303
-      internalID: 1221377377
+      spriteID: 7e3b6a494f0c6284ea6921a1558e3ebf
+      internalID: 1021706268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rgahn_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feeaf4a86c7deec4db20dc3ab5df4db5
+      internalID: -1901131465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rgahn_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225d2107bcb799f469a2d45e9b1b1373
+      internalID: 1730055574
       vertices: []
       indices: 
       edges: []
@@ -128,7 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      exit ui_0: 1221377377
+      rgahn_0: 1021706268
+      rgahn_1: -1901131465
+      rgahn_2: 1730055574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

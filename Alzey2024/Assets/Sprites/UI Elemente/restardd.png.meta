@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 114337080b462324fb4f6d447bb1bddf
+guid: 75fa31e0db3b3c14db1300675fd30cf2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "zur\xFCcksetzten_0"
+      name: restardd_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,8 +111,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 584ac98f5eed89a46a4dbfd71d76c650
-      internalID: -352544101
+      spriteID: 9156706caf9f3994e974fe89854e2045
+      internalID: -737418863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: restardd_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1763f0dc26a1d364eb6d673222165d63
+      internalID: -824838485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: restardd_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc123c60095e6e4883965b3c1428e39
+      internalID: -921648889
       vertices: []
       indices: 
       edges: []
@@ -128,7 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "zur\xFCcksetzten_0": -352544101
+      restardd_0: -737418863
+      restardd_1: -824838485
+      restardd_2: -921648889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
