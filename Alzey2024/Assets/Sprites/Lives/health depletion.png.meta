@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5f230d25ba564fb428cfdf027dcb2865
+guid: bf5e134980bf7184ea35a4383c2779bd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Item_0
+      name: health depletion_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,8 +111,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ae62074058df994ca2f3caa5bb53dd4
-      internalID: -1362053693
+      spriteID: 3ac8ab7987d051a43856132548775099
+      internalID: -1107014796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health depletion_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776df6bb1241a0d47b0ebf69ba671e47
+      internalID: 1062574906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health depletion_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842d02fb5579fd041934bcd34edac92d
+      internalID: -496885044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health depletion_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbed35f9110a224888ddabd09c10802
+      internalID: -2082167174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health depletion_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cb158382a0a4b45a06977ba38d27b3
+      internalID: -748964028
       vertices: []
       indices: 
       edges: []
@@ -128,7 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Item_0: -1362053693
+      health depletion_0: -1107014796
+      health depletion_1: 1062574906
+      health depletion_2: -496885044
+      health depletion_3: -2082167174
+      health depletion_4: -748964028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

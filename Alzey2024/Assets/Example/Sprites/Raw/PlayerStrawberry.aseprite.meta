@@ -308,10 +308,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 48
-      y: 4
-      width: 15
-      height: 14
+      x: 4
+      y: 28
+      width: 14
+      height: 16
     spriteID: 21313be10e5004d409398eae9cf82c4b
     spriteBone: []
     spriteOutline: []
@@ -320,28 +320,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 48, y: 4}
-  - name: PlayerStrawberry_Frame_10
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 28
-      width: 14
-      height: 16
-    spriteID: a130ce34858d16a439787e672969ae04
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
     uvTransform: {x: 4, y: 28}
-  - name: PlayerStrawberry_Frame_11
+  - name: PlayerStrawberry_Frame_10
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -352,7 +332,7 @@ ScriptedImporter:
       y: 94
       width: 12
       height: 16
-    spriteID: 456338a295de8a849bb556dbc0d8fb8e
+    spriteID: a130ce34858d16a439787e672969ae04
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -529,8 +509,8 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 21313be10e5004d409398eae9cf82c4b
-    - name: Frame_10
-      frameIndex: 10
+    - name: Frame_11
+      frameIndex: 11
       additiveSortOrder: 0
       cellRect:
         x: 2
@@ -538,8 +518,8 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: a130ce34858d16a439787e672969ae04
-    - name: Frame_11
-      frameIndex: 11
+    - name: Frame_12
+      frameIndex: 12
       additiveSortOrder: 0
       cellRect:
         x: 1
