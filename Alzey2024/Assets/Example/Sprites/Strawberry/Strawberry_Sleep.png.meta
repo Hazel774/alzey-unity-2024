@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b91006ea27c1c4347be2b6ac0c71bb28
+guid: 81d722be1571da54dafa6194e1ec7130
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Heart_0
+      name: Strawberry_Sleep_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b6af164e59cdc5458b6b7eca4aa3784
-      internalID: 2079807608
+      spriteID: a5c94cdb1edab364a85f7b656119c307
+      internalID: 2095432367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heart_1
+      name: Strawberry_Sleep_1
       rect:
         serializedVersion: 2
         x: 16
@@ -132,71 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 584a8e9578610184999d26ef74de42d5
-      internalID: 897076588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d75e437921ee594ea4de44a73e602f9
-      internalID: -1593322177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52774abb513a9b94ebc4d5595a1f640d
-      internalID: -1617447881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46f399f989ad77d429151c83f96a2eb8
-      internalID: -1807950167
+      spriteID: b952579e11cdad84a90e133552c3c4f5
+      internalID: 445433945
       vertices: []
       indices: 
       edges: []
@@ -212,11 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Heart_0: 2079807608
-      Heart_1: 897076588
-      Heart_2: -1593322177
-      Heart_3: -1617447881
-      Heart_4: -1807950167
+      Strawberry_Sleep_0: 2095432367
+      Strawberry_Sleep_1: 445433945
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

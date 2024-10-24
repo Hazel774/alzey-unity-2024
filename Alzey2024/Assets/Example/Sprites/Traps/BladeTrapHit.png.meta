@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b91006ea27c1c4347be2b6ac0c71bb28
+guid: 5d9fc036bff332e438bcc2566a322866
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Heart_0
+      name: BladeTrapHit_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b6af164e59cdc5458b6b7eca4aa3784
-      internalID: 2079807608
+      spriteID: b8e9f27051dd29b4fb3801f92e219fa7
+      internalID: -1297440533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heart_1
+      name: BladeTrapHit_1
       rect:
         serializedVersion: 2
         x: 16
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 584a8e9578610184999d26ef74de42d5
-      internalID: 897076588
+      spriteID: 7aba5b8291730f743959680d559e423b
+      internalID: -1761073408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heart_2
+      name: BladeTrapHit_2
       rect:
         serializedVersion: 2
         x: 32
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d75e437921ee594ea4de44a73e602f9
-      internalID: -1593322177
+      spriteID: 2181c188a83aff14b9d10570513415d8
+      internalID: 615645354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heart_3
+      name: BladeTrapHit_3
       rect:
         serializedVersion: 2
         x: 48
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52774abb513a9b94ebc4d5595a1f640d
-      internalID: -1617447881
+      spriteID: cc6ea96810acf53468ac808f2f003a13
+      internalID: -34743615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heart_4
+      name: BladeTrapHit_4
       rect:
         serializedVersion: 2
         x: 64
@@ -195,8 +195,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46f399f989ad77d429151c83f96a2eb8
-      internalID: -1807950167
+      spriteID: bf9112404d1a7324dbb27bfa313e69f4
+      internalID: 1519621817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BladeTrapHit_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fa660a7f5cdfe4dacdb57cbc377e8f
+      internalID: -555076219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BladeTrapHit_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6690cd8d3204d449bb8f33a7069a5c9
+      internalID: 1735029989
       vertices: []
       indices: 
       edges: []
@@ -212,11 +254,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Heart_0: 2079807608
-      Heart_1: 897076588
-      Heart_2: -1593322177
-      Heart_3: -1617447881
-      Heart_4: -1807950167
+      BladeTrapHit_0: -1297440533
+      BladeTrapHit_1: -1761073408
+      BladeTrapHit_2: 615645354
+      BladeTrapHit_3: -34743615
+      BladeTrapHit_4: 1519621817
+      BladeTrapHit_5: -555076219
+      BladeTrapHit_6: 1735029989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

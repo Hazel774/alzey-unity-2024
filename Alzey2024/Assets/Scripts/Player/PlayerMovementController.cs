@@ -1,4 +1,5 @@
 using Manager;
+using UnityEditor;
 using UnityEngine;
 
 namespace Player {
@@ -24,6 +25,12 @@ namespace Player {
         [SerializeField]
         private float jumpForce = 200;
 
+        /// <summary>
+        /// Whether to anticipate a jump while holding down space, or not
+        /// </summary>
+        [SerializeField]
+        private bool anticipateJump;
+
         [Header("GroundCheck")]
         /// <summary>
         /// Transform to check if the player is grounded
@@ -31,11 +38,15 @@ namespace Player {
         [SerializeField]
         private Transform groundCheck;
 
+        public Transform GroundCheck { get { return groundCheck; } }
+
         /// <summary>
         /// The size of the ground check box to check for
         /// </summary>
         [SerializeField]
         private Vector2 groundCheckSize;
+
+        public Vector2 GroundCheckSize { get { return groundCheckSize; } }
 
         /// <summary>
         /// Detmermines what is ground
@@ -116,6 +127,7 @@ namespace Player {
             gameManager = GameManager.Instance;
             EventManager.OnPlayerHurt += OnPlayerHurt;
             EventManager.OnPlayerRecovered += OnPlayerRecovered;
+            EventManager.OnPlayerDied += OnPlayerDied;
         }
 
         private void Update() {
@@ -125,8 +137,19 @@ namespace Player {
             if (!blockControls && (gameManager == null || !gameManager.GamePaused)) {
                 horizontalMovement = Input.GetAxisRaw("Horizontal");
 
-                if (Input.GetButtonDown("Jump")) {
-                    jump = true;
+
+                if (anticipateJump) {
+                    if (Input.GetButtonDown("Jump")) {
+                        EventManager.InvokeOnJumpAnticipation();
+                    }
+
+                    if (Input.GetButtonUp("Jump")) {
+                        jump = true;
+                    }
+                } else {
+                    if (Input.GetButtonDown("Jump")) {
+                        jump = true;
+                    }
                 }
             }
 
@@ -151,6 +174,7 @@ namespace Player {
 
             if (grounded && !onWall) {
                 body.AddForce(new Vector2(0, jumpForce));
+                EventManager.InvokeOnJumpExecuted();
             }
 
             jump = false;
@@ -197,9 +221,9 @@ namespace Player {
         /// <summary>
         /// Triggered when the player gets hurt
         /// </summary>
-        private void OnPlayerHurt(Vector3 source) {
+        private void OnPlayerHurt(GameObject source) {
 
-            Vector3 away = (transform.position - source).normalized * damageJumpForce;
+            Vector3 away = (transform.position - source.transform.position).normalized * damageJumpForce;
             Vector2 force = new Vector2(away.x, away.y);
 
             // Make the player jump away when getting hurt
@@ -213,12 +237,20 @@ namespace Player {
         /// </summary>
         private void OnPlayerRecovered() {
             blockControls = false;
-            
+        }
+
+        /// <summary>
+        /// Triggered when the player died
+        /// </summary>
+        private void OnPlayerDied() {
+            blockControls = true;
         }
 
         private void OnDrawGizmosSelected() {
             Gizmos.color = Color.white;
             Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
+
+            groundCheck.position = Handles.PositionHandle(groundCheck.position, Quaternion.identity);
         }
     }
 }

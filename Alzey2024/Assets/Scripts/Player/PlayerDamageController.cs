@@ -1,15 +1,9 @@
 using Manager;
+using Trap;
 using UnityEngine;
 
 namespace Player {
     public class PlayerDamageController : MonoBehaviour {
-
-        /// <summary>
-        /// The damage the player gets when hurt once
-        /// </summary>
-        [SerializeField]
-        private int damagePerHurt = 1;
-
         /// <summary>
         /// The time the player can't move for in seconds after getting hurt
         /// </summary>
@@ -28,10 +22,12 @@ namespace Player {
         [SerializeField, Tooltip("If true, the damage is taken when hitting a trigger, instead of a collider")]
         private bool useTrigger;
 
+        private GameManager gameManager;
         private float hurtTimer;
         private float invincibleTimer;
 
         private void Start() {
+            gameManager = GameManager.Instance;
             EventManager.OnPlayerHurt += HurtPlayer;
         }
 
@@ -56,30 +52,32 @@ namespace Player {
         /// <summary>
         /// Adds the given damage to the player damage
         /// </summary>
-        private void HurtPlayer(Vector3 source) {
-            GameManager.Instance.Damage += damagePerHurt;
+        private void HurtPlayer(GameObject source) {
+            TrapController trapController = source.GetComponent<TrapController>();
+            gameManager.Damage += trapController.Damage;
+            trapController.TriggerHitAnimation();
             hurtTimer = hurtTime;
             invincibleTimer = invincibleTime;
             EventManager.InvokeOnPlayerInvincible();
         }
 
         private void OnCollisionStay2D(Collision2D collision) {
-            if (useTrigger) {
+            if (useTrigger || gameManager.IsPlayerDead) {
                 return;
             }
 
             if (invincibleTimer <= 0 && collision.gameObject.CompareTag("Trap")) {
-                EventManager.InvokeOnPlayerHurt(collision.transform.position);
+                EventManager.InvokeOnPlayerHurt(collision.gameObject);
             }
         }
 
         private void OnTriggerStay2D(Collider2D collision) {
-            if (!useTrigger) {
+            if (!useTrigger || gameManager.IsPlayerDead) {
                 return;
             }
 
             if (invincibleTimer <= 0 && collision.gameObject.CompareTag("Trap")) {
-                EventManager.InvokeOnPlayerHurt(collision.transform.position);
+                EventManager.InvokeOnPlayerHurt(collision.gameObject);
             }
         }
     }
